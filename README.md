@@ -62,7 +62,8 @@ Example JSON file:
 
 Instead of passwords, Puf exclusively uses magic links for authentication.
 Users enter their email, and Puf generates a one-time-use login link that logs them in instantly.
-🔑 Why Magic Links?
+
+### 🔑 Why Magic Links?
 
     More secure than passwords (No risk of leaks or weak passwords)
     User-friendly (No need to remember login details)
