@@ -1,6 +1,11 @@
 <?php
+/**
+ * 🌳🌿🍄   puf message  🍁🌿🌳
+ * src/app.php
+ * This is the main place where you app code goes.
+ */ 
 
-require_once 'puf/Puf.php';
+require_once '_puf/Puf.php';
 
 session_start();
 
