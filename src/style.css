@@ -1,0 +1,307 @@
+/* General Layout */
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    height: 40px;/* Todo List Items */
+}
+
+
+
+/* No animation by default */
+.navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* When hovered, apply the combined animation */
+.navbar-brand:hover img {
+    animation: floatScale 2s ease-in-out infinite, spin 3s linear infinite;
+}
+
+/* Keyframes for Floating + Scaling */
+@keyframes floatScale {
+    0% { transform: translateY(0) scale(1); }
+    25% { transform: translateY(-15px) scale(1.05); }
+    50% { transform: translateY(0) scale(1); }
+    75% { transform: translateY(515x) scale(0.95); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* Keyframes for Smooth Spinning */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Section */
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Checkbox Styling */
+.mark-complete {
+    width: 24px;
+    height: 24px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+/* Text */
+.todo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.todo-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Description */
+.todo-description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Actions */
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn-icon {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-icon i {
+    color: #6c757d;
+}
+
+.btn-icon:hover {
+    background: #f8f9fa;
+    border-color: #bbb;
+}
+
+.btn-icon:active {
+    transform: scale(0.95);
+}
+
+
+/* Subtitle */
+.subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6c757d;
+}
+
+/* Main Content - Pushes Footer Down */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dashed #cac8c8;
+    padding: 28px 75px 45px 75px;
+    border-radius: 21px;
+}
+
+/* Footer */
+.footer {
+    background: #f8f9fa;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-top: 40px; /* Extra whitespace above footer */
+    text-align: center;
+}
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #343a40;
+    text-decoration: underline;
+}
+
+/* Footer Right - Social Links */
+.footer-right {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-link i {
+    font-size: 20px;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.social-link i:hover {
+    color: #343a40;
+}
+
+/* Todo Form Container */
+.todo-form-container {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centering */
+}
+
+/* Todo List Items */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Section */
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Checkbox Styling */
+.mark-complete {
+    width: 24px;
+    height: 24px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+/* Text */
+.todo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.todo-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Description */
+.todo-description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Actions */
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn-icon {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-icon i {
+    color: #6c757d;
+}
+
+.btn-icon:hover {
+    background: #f8f9fa;
+    border-color: #bbb;
+}
+
+.btn-icon:active {
+    transform: scale(0.95);
+}
+
+
+/* Button Styling */
+.btn-primary, .btn-danger {
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
