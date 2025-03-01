@@ -1,7 +1,7 @@
 <?php
 /**
  * 🌳🌿🍄   puf message  🍁🌿🌳
- * src/app.php
+ * project/app.php
  * This is the main place where you app code goes.
  */ 
 

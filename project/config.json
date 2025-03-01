@@ -2,8 +2,8 @@
     "site_name": "My Puf App",
     "base_url": "http://localhost",
     "local_testing_port": 1312,
-    "pages_directory": "src/pages",
-    "partials_directory": "src/pages/parts",
+    "pages_directory": "project/pages",
+    "partials_directory": "project/pages/parts",
     "page_extension": "page",
     "partial_extension": "part"
 }

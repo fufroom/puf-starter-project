@@ -8,5 +8,5 @@ else
     exit 1
 fi
 
-# Upload files from src/ to server
-rsync -avz --progress "src/" "${SERVER_USER}@${SERVER_HOST}:${SERVER_PATH}"
+# Upload project files from project/ to server
+rsync -avz --progress "project/" "${SERVER_USER}@${SERVER_HOST}:${SERVER_PATH}"
